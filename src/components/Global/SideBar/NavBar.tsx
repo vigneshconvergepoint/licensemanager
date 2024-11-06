@@ -1,4 +1,4 @@
-import { IconChangeLog, IconDashboard, IconEdit, IconFolderOpen, IconHelpCircle, IconHome } from "@convergepoint/icons";
+// import { IconChangeLog, IconDashboard, IconEdit, IconFolderOpen, IconHelpCircle, IconHome } from "@convergepoint/icons";
 // local import:
 import { Navigation } from "./Navigation.tsx";
 
@@ -7,47 +7,58 @@ interface Navbar {
 }
 
 const MainMenus: any = [
-  { menu: "Home", icon: <IconHome />, key: "Home", pageUrl: "/" },
+  { menu: "Home",
+    //  icon: <IconHome />, 
+    icon: "",
+    key: "Home",
+    pageUrl: "/" },
   {
     menu: "Log View",
     key: "LogView",
-    icon: <IconChangeLog />,
+    // icon: <IconChangeLog />,
+    icon: "",
     pageUrl: "/LogView",
   },
   {
     menu: "Configure Expiration Email",
     key: "ExpirationEmail",
-    icon: <IconDashboard />,
+    // icon: <IconDashboard />,
+    icon: "",
     pageUrl: "/ExpirationEmail",
   },
   {
     menu: "Expiration Report",
     key: "ExpirationReport",
-    icon: <IconHelpCircle />,
+    // icon: <IconHelpCircle />,
+    icon: "",
     pageUrl: "/ExpirationReport",
   },
   {
     menu: "Add User",
     key: "AddUser",
-    icon: <IconEdit />,
+    // icon: <IconEdit />,
+    icon: "",
     pageUrl: "/AddUser",
   },
   {
     menu: "OCR Log View",
     key: "OCRLogView",
-    icon: <IconFolderOpen />,
+    // icon: <IconFolderOpen />,
+    icon: "",
     pageUrl:"/OCRLogView",
   },
   {
     menu: "Usage Analytics",
     key: "UsageAnalytics",
-    icon: <IconChangeLog />,
+    // icon: <IconChangeLog />,
+    icon: "",
     pageUrl: "/UsageAnalytics",
   },
   {
     menu: "Logic App",
     key: "LogicApp",
-    icon: <IconHome />,
+    // icon: <IconHome />,
+    icon: "",
     pageUrl: "/LogicApp",
   },
 ];

@@ -5,31 +5,41 @@ import {
   useSegmentControlResetStyle,
 } from "./NavigationStyle";
 import { mergeClasses, Button, Tooltip } from "@fluentui/react-components";
-import {
-  IconAddFile,
-  IconChangeLog,
-  IconChevronRight,
-  IconDashboard,
-  IconEdit,
-  IconFolderOpen,
-  IconHelpCircle,
-  IconHome,
-  IconReport,
-  IconSetting,
-  IconObligations1,
-} from "@convergepoint/icons";
+// import {
+//   IconAddFile,
+//   IconChangeLog,
+//   IconChevronRight,
+//   IconDashboard,
+//   IconEdit,
+//   IconFolderOpen,
+//   IconHelpCircle,
+//   IconHome,
+//   IconReport,
+//   IconSetting,
+//   IconObligations1,
+// } from "@convergepoint/icons";
 import { useLocation, NavLink, useNavigate } from "react-router-dom";
 const icons = {
-  home: <IconHome />,
-  documents: <IconAddFile />,
-  manage: <IconEdit />,
-  reports: <IconReport />,
-  help: <IconHelpCircle />,
-  administration: <IconSetting />,
-  dashboard: <IconDashboard />,
-  "repository home": <IconFolderOpen />,
-  "change log": <IconChangeLog />,
-  "library documents": <IconFolderOpen />,
+  // home: <IconHome />,
+  home: "",
+  // documents: <IconAddFile />,
+  documents:"",
+  // manage: <IconEdit />,
+  manage: "",
+  // reports: <IconReport />,
+  reports: "",
+  // help: <IconHelpCircle />,
+  help: "",
+  // administration: <IconSetting />,
+  administration: "",
+  // dashboard: <IconDashboard />,
+  dashboard: "",
+  // "repository home": <IconFolderOpen />,
+  "repository home": "",
+  // "change log": <IconChangeLog />,
+  "change log": "",
+  // "library documents": <IconFolderOpen />,
+  "library documents": "",
   renewals: (
     <svg
       width="24"
@@ -45,7 +55,8 @@ const icons = {
       />
     </svg>
   ),
-  obligations: <IconObligations1 primaryFill="#646B72" />,
+  // obligations: <IconObligations1 primaryFill="#646B72" />,
+  obligations: "",
   requests: (
     <svg
       width="25"
@@ -192,11 +203,12 @@ export const Navigation = (props) => {
               )}
               size="small"
               icon={
-                <IconChevronRight
-                  width={8}
-                  height={12}
-                  primaryFill="#ffffffb8"
-                />
+                // <IconChevronRight
+                //   width={8}
+                //   height={12}
+                //   primaryFill="#ffffffb8"
+                // />
+                ""
               }
               onClick={handleClick}
               tabIndex={0}

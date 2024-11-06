@@ -1,6 +1,6 @@
 import * as React from "react";
 import { makeResetStyles } from "@fluentui/react-components";
-import { IconMenu } from "@convergepoint/icons";
+// import { IconMenu } from "@convergepoint/icons";
 import { Heading } from "../Heading/Heading.tsx";
 import Button from "../Button/Button.tsx";
 import { useMsal } from "@azure/msal-react";
