@@ -17,7 +17,7 @@ const [error, setError] = React.useState(null);
 const { instance } = useMsal();
 
 
-console.log('instance', instance)
+console.log('instances', instance)
 React.useEffect(()=>{
   const fetchData = async () => {
     try {
