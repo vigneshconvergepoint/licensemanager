@@ -122,7 +122,6 @@ const TopNavBar = ({ setExpanded }) => {
               setExpanded((prev) => !prev);
             }}
           >
-
           </div>
           <Heading
             heading={"Home"}
