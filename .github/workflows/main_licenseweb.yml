@@ -24,7 +24,7 @@ jobs:
           npm run build  # This will generate the dist/ folder
 
       - name: Zip dist folder for deployment
-        run: zip -r release.zip dist  # Only zip the dist folder
+        run: zip -r release.zip dist/  # Only zip the dist folder
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -54,5 +54,5 @@ jobs:
         with:
           app-name: 'LicenseWeb'
           slot-name: 'Production'
-          package: './dist'  # Point to the dist folder
+          package: 'release.zip'  # Use the zip file directly for deployment
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_19AFAE52794F453F9ABD6AEDD7910698 }}
